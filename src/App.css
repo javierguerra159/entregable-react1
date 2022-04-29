@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+/* div{
+  
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card{background-color: antiquewhite;
+  height: 300px;
+  max-width: 800px;
+  box-shadow: 2px 2px 8px rgb(6, 6, 6); 
+  border-radius: 20px;
+  
+  
+}
+
+.card ul{
+  text-align: right;
+  list-style: none;
+  padding: 20px;
+}
+.card button{
+  justify-content: right;
+  border-radius: 10px;
+} */
