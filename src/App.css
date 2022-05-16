@@ -2,32 +2,129 @@
   box-sizing: border-box;
   
 }
-
- div{
+   body{
+   background-color: rgb(36, 34, 34); 
+}   
+#header{
+ 
+  width: 100%;
+  height: 372px;
   
+}
+
+#logo{
+  width: 100%;
+  background-image: url(https://lh3.googleusercontent.com/067rFo-zyDLDXD4a_sJatkhCqU5cyl08pAMXe7Us4rtiU_6FkTtSrvUxf-oCm_YWbRSul_Ja63C_kxauA9cIpTIuWFTJNbAg3L6Kpg0=h600);
+ background-position: center;
+ background-size: cover;
+
+  height: 200px;
+}
+#header h1{
+  width: 100%;
+  height: 50px;
+  padding-top: 20px;
   text-align: center;
-  height: 100vh;
+  color:whitesmoke;
+  font-family:sans-serif;
+ 
+}
+.list-flex{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.card-location{
+  margin: 10px;
+  color: white;
+}
+.search{
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.input{
+  width: 500px;
+}
+.input .input-text{
+  width: 500px;
+  padding: 4px;
+  outline: none;
+  background-color: rgb(86, 81, 76);
+  color: white;
+}
+.search button{
+  background-color: rgb(21, 20, 20);
+  color: white;
+  border: 2px solid;
+  padding: 2px;
+}
+.characters-container{
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  gap: 20px;
+}
+.card{
+  width: 360px; 
+  background-color: rgb(64, 63, 63);
+  color: white;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+.image-container-card{
+  
+  width: 150px;
+  height: 170px;
+  overflow: hidden; 
+}
+.image-character{
+  height: 100%;
+  transform: translateX(-20%);
+}
+.card-information{
+  padding: 10px;
+}
+.card-title{
+  margin: 0;
+  margin-bottom: 5px;
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+.status-specie-container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
 }
-
-
-.card{background-color: antiquewhite;
-  height: 300px;
-  max-width: 800px;
-  box-shadow: 2px 2px 8px rgb(6, 6, 6); 
-  border-radius: 20px;
-  
+.status-species-title{
+  margin: 0;
   
 }
-
-.card ul{
-  text-align: right;
-  list-style: none;
-  padding: 20px;
+.origin-label{
+  margin: 0;
+  opacity: 0.7;
 }
-.card button{
-  justify-content: right;
-  border-radius: 10px;
+.origin-name{
+  margin: 0;
+  margin-bottom: 5px;
 }
+.episode-label{
+  margin: 0;
+  opacity: 0.7;
+}
+.episode-quantity{
+  margin: 0;
+}   

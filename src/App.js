@@ -1,8 +1,6 @@
 
 import './App.css';
-import QuoteBox from './components/QuoteBox';
-
-
+import LocationInfo from './components/LocationInfo';
 
 
 
@@ -12,8 +10,8 @@ function App() {
  
   return(
     <div>
-     
-     <QuoteBox/>
+      
+     <LocationInfo/>
     </div>
   );
   };

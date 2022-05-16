@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import SearchBox from '../SearchBox';
-import RikyUrl from './RikyUrl';
-// import Residentslist from './ResidentsList';
+import ResidentsList from '../ResidentsList';
+
+import SearchBox from './SearchBox';
+
 
 const LocationInfo = () => {
     const[ riky, setRiky] = useState({})
@@ -12,42 +13,31 @@ const LocationInfo = () => {
     axios.get(`https://rickandmortyapi.com/api/location/${ramdon}`)
     .then(res => setRiky(res.data))
    },[])
-// const [riky, setRiky] = useState({})
-// useEffect(() => {
 
-//     const ramdon = Math.floor(Math.random() * 126)
-// axios.get(`https://rickandmortyapi.com/api/location/${ramdon}`)
-// .then(res => setRiky(res.data))
-
-
-// },[])
-// console.log(riky)
-
-    return (
+   return (
         <div>
-           <header>
-               
-           <h1>
-                {riky.name}
-            </h1>
-           </header>
-                
-           
-            <SearchBox setRiky={setRiky}/>
-            
-             <ul>
-                 <li className='card'>
+           <header id='header'>
+               <div id='logo'> </div>
+               <h1>
+                    {riky.name}
+               </h1>
+            </header>
+         <div className='list-flex'>
+                 <div className='card-location'>
                      <b>dimension: </b>{riky.dimension}
-                 </li>
-                 <li className='card'>
+                 </div>
+                 <div className='card-location'>
                      <b>type: </b>{riky.type}
-                 </li>
-                 <li className='card'>
+                 </div>
+                 <div className='card-location'>
                      <b>population: </b>{riky.residents?.length}
-                 </li>
-             </ul>
-             <RikyUrl rikyUrl={riky.residents}/>
-               
+                 </div>
+             </div>
+             <div>
+                 
+             </div>
+             <SearchBox setRiky={setRiky}/>
+             <ResidentsList residents={riky.residents}/>
         </div>
         
     );
